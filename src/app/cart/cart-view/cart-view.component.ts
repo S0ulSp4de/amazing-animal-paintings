@@ -29,6 +29,9 @@ export class CartViewComponent implements OnInit {
       total += item.price;
     }
     return total;
+  }
 
+  clearCart(): void{
+    this.cartService.clearCart().subscribe();
   }
 }
